@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSO Brasil - Linha do Tempo Histórica</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts para a tipografia moderna estilo CNN -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CABEÇALHO CNN -->
+    <header class="cnn-header">
+        <div class="cnn-top-bar">
+            <span class="live-badge">AO VIVO / HISTÓRIA</span>
+            <span id="current-date"></span>
+            <span class="edition-tag">ESPECIAL BNCC</span>
+        </div>
+        <div class="cnn-logo-area">
+            <h1>MSO.<span class="history-sub">HISTORY</span></h1>
+            <p class="subtitle">Cobertura Global: A Linha do Tempo da Humanidade e do Brasil</p>
+        </div>
+    </header>
+
+    <main class="cnn-container">
+        <!-- BARRA DE PESQUISA & BREAKING NEWS BANNER -->
+        <section class="breaking-banner">
+            <div class="breaking-label">PLANTÃO</div>
+            <div class="breaking-text">Acompanhe os fatos que transformaram o mundo em ordem cronológica rigorosa.</div>
+        </section>
+
+        <section class="search-section">
+            <input type="text" id="search-input" placeholder="🔍 Buscar fatos históricos, guerras, revoluções...">
+        </section>
+
+        <!-- FEED CRONOLÓGICO (ESTILO PORTAL DE NOTÍCIAS) -->
+        <div class="timeline-feed" id="links-container">
+
+            <!-- 1. PALEOLÍTICO -->
+            <article class="news-card" data-title="o paleolítico">
+                <div class="card-meta">
+                    <span class="category-tag">Pré-História</span>
+                    <span class="time-marker">Fase 01</span>
+                </div>
+                <h2><a href="O%20Paleol%C3%ADtico.html">O Paleolítico</a></h2>
+                <p>As sociedades caçadoras-coletoras, o domínio do fogo e as primeiras manifestações culturais e tecnológicas da humanidade.</p>
+            </article>
+
+            <!-- 2. NEOLÍTICO -->
+            <article class="news-card" data-title="o neolítico">
+                <div class="card-meta">
+                    <span class="category-tag">Pré-História</span>
+                    <span class="time-marker">Fase 02</span>
+                </div>
+                <h2><a href="neolitico.html">O Neolítico</a></h2>
+                <p>A Revolução Agrícola, a sedentarização das comunidades, a domesticação de animais e o surgimento das primeiras aldeias estruturadas.</p>
+            </article>
+
+            <!-- 3. IDADE DOS METAIS -->
+            <article class="news-card" data-title="a idade dos metais">
+                <div class="card-meta">
+                    <span class="category-tag">Pré-História</span>
+                    <span class="time-marker">Fase 03</span>
+                </div>
+                <h2><a href="metais.html">A Idade dos Metais</a></h2>
+                <p>O domínio da fundição do cobre, bronze e ferro, a intensificação do comércio, o surgimento das classes sociais e a transição para as primeiras cidades-estado.</p>
+            </article>
+
+            <!-- 4. MESOPOTÂMIA -->
+            <article class="news-card" data-title="mesopotâmia">
+                <div class="card-meta">
+                    <span class="category-tag">Antiguidade Oriental</span>
+                    <span class="time-marker">Fase 04</span>
+                </div>
+                <h2><a href="mesopotamia.html">Mesopotâmia</a></h2>
+                <p>O surgimento das primeiras civilizações entre os rios Tigre e Eufrates, a invenção da escrita cuneiforme e a estruturação das leis.</p>
+            </article>
+
+            <!-- (O restante da lista continua logo após...) -->
+            <!-- 3 -->
+            <article class="news-card" data-title="grécia antiga">
+                <div class="card-meta">
+                    <span class="category-tag">Antiguidade Clássica</span>
+                    <span class="time-marker">Fase 03</span>
+                </div>
+                <h2><a href="grecia.html">Grécia Antiga</a></h2>
+                <p>A consolidação das pólis, o nascimento da filosofia, das artes e dos conceitos fundamentais de cidadania e democracia.</p>
+            </article>
+
+            <!-- 4 -->
+            <article class="news-card" data-title="roma antiga">
+                <div class="card-meta">
+                    <span class="category-tag">Antiguidade Clássica</span>
+                    <span class="time-marker">Fase 04</span>
+                </div>
+                <h2><a href="roma.html">Roma Antiga</a></h2>
+                <p>Da fundação e República ao apogeu do Império: a expansão territorial pelo Mediterrâneo e o legado do direito romano.</p>
+            </article>
+
+            <!-- 5 -->
+            <article class="news-card" data-title="o cristianismo e o fim do império romano">
+                <div class="card-meta">
+                    <span class="category-tag">Antiguidade Tardia</span>
+                    <span class="time-marker">Fase 05</span>
+                </div>
+                <h2><a href="O Cristianismo e o Fim do Império Romano.html">O Cristianismo e o Fim do Império Romano</a></h2>
+                <p>A ascensão do cristianismo como força unificadora e a transição estrutural que deu origem ao mundo medieval.</p>
+            </article>
+
+            <!-- 6 -->
+            <article class="news-card" data-title="o império bizantino">
+                <div class="card-meta">
+                    <span class="category-tag">Idade Média</span>
+                    <span class="time-marker">Fase 06</span>
+                </div>
+                <h2><a href="O Império Bizantino.html">O Império Bizantino</a></h2>
+                <p>A herança romano-oriental em Constantinopla, preservando saberes e moldando a geopolítica medieval.</p>
+            </article>
+
+            <!-- 7 -->
+            <article class="news-card" data-title="povos pré-colombianos">
+                <div class="card-meta">
+                    <span class="category-tag">América Pré-Colonial</span>
+                    <span class="time-marker">Fase 07</span>
+                </div>
+                <h2><a href="Povos%20Pr%C3%A9-Colombianos.html">Povos Pré-Colombianos</a></h2>
+                <p>A organização política, social e econômica das grandes civilizações nativas (Maias, Incas e Astecas) nas Américas.</p>
+            </article>
+
+            <!-- 8 -->
+            <article class="news-card" data-title="renascimento comercial e urbano">
+                <div class="card-meta">
+                    <span class="category-tag">Baixa Idade Média</span>
+                    <span class="time-marker">Fase 08</span>
+                </div>
+                <h2><a href="Renascimento Comercial e Urbano.html">Renascimento Comercial e Urbano</a></h2>
+                <p>O reaquecimento das rotas mercantis na Europa, o surgimento das feiras, das cidades livres e da classe burguesa.</p>
+            </article>
+
+            <!-- 9 -->
+            <article class="news-card" data-title="a crise do século xiv">
+                <div class="card-meta">
+                    <span class="category-tag">Baixa Idade Média</span>
+                    <span class="time-marker">Fase 09</span>
+                </div>
+                <h2><a href="A Crise do Século XIV.html">A Crise do Século XIV</a></h2>
+                <p>Fomes generalizadas, a devastação provocada pela Peste Negra e revoltas sociais que abalaram o sistema feudal.</p>
+            </article>
+
+            <!-- 10 -->
+            <article class="news-card" data-title="as grandes navegações">
+                <div class="card-meta">
+                    <span class="category-tag">Início da Idade Moderna</span>
+                    <span class="time-marker">Fase 10</span>
+                </div>
+                <h2><a href="As%20Grandes%20Navega%C3%A7%C3%B5es.html">As Grandes Navegações</a></h2>
+                <p>A expansão marítima ibérica e europeia, novas tecnologias náuticas e o encontro (e choque) de mundos distintos.</p>
+            </article>
+
+            <!-- 11 -->
+            <article class="news-card" data-title="a companhia das índias">
+                <div class="card-meta">
+                    <span class="category-tag">Idade Moderna</span>
+                    <span class="time-marker">Fase 11</span>
+                </div>
+                <h2><a href="A%20Companhia%20das%2_%C3%ADndias.html">A Companhia das Índias</a></h2>
+                <p>Os monopólios comerciais estatais e corporativos na exploração mercantil global de especiarias e riquezas.</p>
+            </article>
+
+            <!-- 12 -->
+            <article class="news-card" data-title="colonização espanhola">
+                <div class="card-meta">
+                    <span class="category-tag">América Colonial</span>
+                    <span class="time-marker">Fase 12</span>
+                </div>
+                <h2><a href="Coloniza%C3%A7%C3%A3o%20Espanhola.html">Colonização Espanhola</a></h2>
+                <p>A exploração mineradora e agrária na América Hispânica, a imposição de trabalho compulsório (mita e encomienda).</p>
+            </article>
+
+            <!-- 13 -->
+            <article class="news-card" data-title="rebeliões coloniais">
+                <div class="card-meta">
+                    <span class="category-tag">Brasil Colonial</span>
+                    <span class="time-marker">Fase 13</span>
+                </div>
+                <h2><a href="Rebeli%C3%B5es%20Coloniais.html">Rebeliões Coloniais</a></h2>
+                <p>Os movimentos nativistas e emancipacionistas (como a Inconfidência Mineira) contra o pacto e a opressão metropolitana.</p>
+            </article>
+
+            <!-- 14 -->
+            <article class="news-card" data-title="resistência, tráfico e quilombos">
+                <div class="card-meta">
+                    <span class="category-tag">Brasil Colonial / Imperial</span>
+                    <span class="time-marker">Fase 14</span>
+                </div>
+                <h2><a href="Resist%C3%AAncia,%20Tr%C3%A1fico%20e%20Quilombos.html">Resistência, Tráfico e Quilombos</a></h2>
+                <p>O sistema do tráfico atlântico de escravizados e as formas estruturadas de resistência e liberdade através dos quilombos.</p>
+            </article>
+
+            <!-- 15 -->
+            <article class="news-card" data-title="revolução industrial">
+                <div class="card-meta">
+                    <span class="category-tag">Idade Contemporânea</span>
+                    <span class="time-marker">Fase 15</span>
+                </div>
+                <h2><a href="Revolu%C3%A7%C3%A3o%20Industrial.html">Revolução Industrial</a></h2>
+                <p>A introdução das máquinas a vapor, a divisão do trabalho, a formação do operariado e as mudanças socioambientais globais.</p>
+            </article>
+
+            <!-- 16 -->
+            <article class="news-card" data-title="a revolução francesa">
+                <div class="card-meta">
+                    <span class="category-tag">Idade Contemporânea</span>
+                    <span class="time-marker">Fase 16</span>
+                </div>
+                <h2><a href="A%20Revolu%C3%A7%C3%A3o%20Francesa.html">A Revolução Francesa</a></h2>
+                <p>A queda do Antigo Regime, os ideais de Liberdade, Igualdade e Fraternidade e a declaração dos direitos do homem.</p>
+            </article>
+
+            <!-- 17 -->
+            <article class="news-card" data-title="era napoleônica">
+                <div class="card-meta">
+                    <span class="category-tag">Século XIX</span>
+                    <span class="time-marker">Fase 17</span>
+                </div>
+                <h2><a href="Era%20Napole%C3%B4nica.html">Era Napoleônica</a></h2>
+                <p>A consolidação e difusão das leis burguesas pela Europa e o impacto direto com a transferência da Corte portuguesa ao Brasil.</p>
+            </article>
+
+            <!-- 18 -->
+            <article class="news-card" data-title="independência do brasil">
+                <div class="card-meta">
+                    <span class="category-tag">Brasil Império</span>
+                    <span class="time-marker">Fase 18</span>
+                </div>
+                <h2><a href="Independ%C3%AAncia%20do%20Brasil.html">Independência do Brasil</a></h2>
+                <p>O arranjo político de 1822, a ruptura com Lisboa e a fundação do Império sob uma nova ordem nacional.</p>
+            </article>
+
+            <!-- 19 -->
+            <article class="news-card" data-title="período regencial">
+                <div class="card-meta">
+                    <span class="category-tag">Brasil Império</span>
+                    <span class="time-marker">Fase 19</span>
+                </div>
+                <h2><a href="Per%C3%ADodo%20Regencial.html">Período Regencial</a></h2>
+                <p>A vacância do trono, as revoltas regenciais nas províncias (Cabanagem, Farroupilha) e os debates sobre a centralização do poder.</p>
+            </article>
+
+            <!-- 20 -->
+            <article class="news-card" data-title="guerra do paraguai">
+                <div class="card-meta">
+                    <span class="category-tag">Brasil Império</span>
+                    <span class="time-marker">Fase 20</span>
+                </div>
+                <h2><a href="guerra_paraguai.html">Guerra do Paraguai</a></h2>
+                <p>O conflito de maior proporção na América do Sul envolvendo a Tríplice Aliança e o Paraguai, com profundos reflexos militares e sociais.</p>
+            </article>
+
+            <!-- 21 -->
+            <article class="news-card" data-title="imperialismo">
+                <div class="card-meta">
+                    <span class="category-tag">Final do Século XIX</span>
+                    <span class="time-marker">Fase 21</span>
+                </div>
+                <h2><a href="Imperialismo.html">Imperialismo</a></h2>
+                <p>A partilha neo-colonial da África e da Ásia pelas potências industriais europeias em busca de matérias-primas e mercados.</p>
+            </article>
+
+            <!-- 22 -->
+            <article class="news-card" data-title="primeira guerra mundial">
+                <div class="card-meta">
+                    <span class="category-tag">Século XX</span>
+                    <span class="time-marker">Fase 22</span>
+                </div>
+                <h2><a href="Primeira%20Guerra%20Mundial.html">Primeira Guerra Mundial</a></h2>
+                <p>O choque interimperialista, a queda dos grandes impérios tradicionais e a reconfiguração traumática do mapa mundial.</p>
+            </article>
+
+            <!-- 23 -->
+            <article class="news-card" data-title="revolução russa">
+                <div class="card-meta">
+                    <span class="category-tag">Século XX</span>
+                    <span class="time-marker">Fase 23</span>
+                </div>
+                <h2><a href="Revolu%C3%A7%C3%A3o%20Russa.html">Revolução Russa</a></h2>
+                <p>A queda do czarismo, a tomada do poder pelos sovietes e a criação da União Soviética (URSS), alterando o eixo ideológico global.</p>
+            </article>
+
+            <!-- 24 -->
+            <article class="news-card" data-title="a crise de 1929 e o totalitarismo">
+                <div class="card-meta">
+                    <span class="category-tag">Século XX</span>
+                    <span class="time-marker">Fase 24</span>
+                </div>
+                <h2><a href="Crise%20de%201929%20e%20Totalitarismo.html">A Crise de 1929 e o Totalitarismo</a></h2>
+                <p>O colapso financeiro da Bolsa de Nova York e o terreno fértil para a ascensão de regimes fascistas e nazistas na Europa.</p>
+            </article>
+
+            <!-- 25 -->
+            <article class="news-card" data-title="era vargas">
+                <div class="card-meta">
+                    <span class="category-tag">Brasil República</span>
+                    <span class="time-marker">Fase 25</span>
+                </div>
+                <h2><a href="Era%20Vargas.html">Era Vargas</a></h2>
+                <p>De 1930 a 1945: a centralização do Estado, o impulso à industrialização nacional, a legislação trabalhista e o populismo.</p>
+            </article>
+
+            <!-- 26 -->
+            <article class="news-card" data-title="segunda guerra mundial">
+                <div class="card-meta">
+                    <span class="category-tag">Século XX</span>
+                    <span class="time-marker">Fase 26</span>
+                </div>
+                <h2><a href="Segunda%20Guerra%20Mundial.html">Segunda Guerra Mundial</a></h2>
+                <p>O conflito de maior escala da história humana, o genocídio do Holocausto, o uso das armas nucleares e o prelúdio da bipolaridade.</p>
+            </article>
+
+            <!-- 27 -->
+            <article class="news-card" data-title="guerra fria">
+                <div class="card-meta">
+                    <span class="category-tag">Século XX</span>
+                    <span class="time-marker">Fase 27</span>
+                </div>
+                <h2><a href="Guerra%20Fria.html">Guerra Fria</a></h2>
+                <p>A disputa geopolítica, tecnológica e ideológica entre Estados Unidos e União Soviética e seus reflexos na América Latina.</p>
+            </article>
+
+            <!-- 28 -->
+            <article class="news-card" data-title="redemocratização e constituição de 1988">
+                <div class="card-meta">
+                    <span class="category-tag">Brasil Contemporâneo</span>
+                    <span class="time-marker">Fase 28</span>
+                </div>
+                <h2><a href="Redemocratizacao e Constituicao de 1988.html">Redemocratização e Constituição de 1988</a></h2>
+                <p>O encerramento do ciclo militar, a promulgação da "Constituição Cidadã" e a garantia de direitos civis, sociais e políticos.</p>
+            </article>
+
+            <!-- 29 -->
+            <article class="news-card" data-title="fim da guerra fria">
+                <div class="card-meta">
+                    <span class="category-tag">Século XX / XXI</span>
+                    <span class="time-marker">Fase 29</span>
+                </div>
+                <h2><a href="Fim%20da%20Guerra%20Fria.html">Fim da Guerra Fria</a></h2>
+                <p>A queda do Muro de Berlim, a dissolução da URSS e a consolidação temporária de uma ordem mundial unipolar.</p>
+            </article>
+
+            <!-- 30 -->
+            <article class="news-card" data-title="globalização e os brics">
+                <div class="card-meta">
+                    <span class="category-tag">Século XXI</span>
+                    <span class="time-marker">Fase 30</span>
+                </div>
+                <h2><a href="Sul Global e os BRICS.html">Globalização e os BRICS</a></h2>
+                <p>A integração econômica global, os fluxos digitais e a emergência de novos blocos multilaterais de poder geopolítico.</p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="cnn-footer">
+        <p>&copy; 2026 CNN History &bull; Todos os direitos reservados &bull; Diretrizes BNCC</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
