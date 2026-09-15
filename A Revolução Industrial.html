@@ -4,104 +4,272 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Revolução Industrial - Portal Educacional</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Fonte Serifada Acadêmica (estilo Lora) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', 'Times New Roman', serif;
+            color: #111;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        header h1 {
+            font-size: 2rem;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 5px;
+            font-family: sans-serif;
+        }
+        .bncc-tag {
+            display: inline-block;
+            font-size: 0.85rem;
+            color: #b25900;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-family: sans-serif;
+        }
+        h2 {
+            font-size: 1.35rem;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            color: #000;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        h3 {
+            font-size: 1.1rem;
+            margin-top: 25px;
+            color: #333;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+        /* Estilo para abreviações com pontilhado acadêmico */
+        abbr {
+            text-decoration: underline dotted;
+            cursor: help;
+        }
+        /* Caixa de Imagem */
+        .image-container {
+            margin: 25px 0;
+            text-align: center;
+            border: 1px dashed #ccc;
+            padding: 15px;
+            background-color: #fafafa;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .image-caption {
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        /* Botão de Voltar */
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 8px 15px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .btn-voltar:hover {
+            background-color: #555;
+        }
+        /* Estilos das Questões ENEM e Gabarito Escondido */
+        .questao-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 6px;
+            background-color: #fdfdfd;
+        }
+        .questao-box h3 {
+            margin-top: 0;
+            color: #b25900;
+            font-family: sans-serif;
+        }
+        .questao-box ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .questao-box li {
+            margin-bottom: 12px;
+        }
+        .questao-box button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        .questao-box button:hover {
+            background-color: #555;
+        }
+        .gabarito {
+            display: none; /* Escondido por padrão */
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-left: 4px solid #333;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
 
-    <div>
-        SECRETARIA MUNICIPAL / ESTADUAL DE EDUCAÇÃO | 
-        Habilidade BNCC: <strong>EF08HI03</strong> | História Moderna e Contemporânea
+    <div class="container">
+        <!-- BOTÃO DE VOLTAR -->
+        <a href="index.html" class="btn-voltar">&#8592; Voltar para a Página Inicial</a>
+
+        <header>
+            <div class="breadcrumb">
+                SECRETARIA MUNICIPAL / ESTADUAL DE EDUCAÇÃO | História Moderna e Contemporânea
+            </div>
+            <h1>A <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr></h1>
+            <p>A introdução das <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquinas a vapor</abbr>, a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr>, a formação do <abbr title="Operariado: classe social formada pelos trabalhadores assalariados das indústrias">operariado</abbr> e as mudanças socioambientais globais.</p>
+            <div class="bncc-tag">
+                <span>BNCC: EF08HI03 - A <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr> e seus impactos na produção, no trabalho e no meio ambiente</span>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- ESPAÇO PARA IMAGEM -->
+            <section class="image-container">
+                <img src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2024/02/Revolucoes-Industriais.jpg?quality=70&strip=info&w=1280&h=720&crop=1" alt="Ilustração de uma fábrica do século XIX com máquinas a vapor e chaminés poluentes">
+                <div class="image-caption">Figura: Ilustração histórica do período industrial, destacando a força mecânica e a transformação do trabalho urbano.</div>
+            </section>
+
+            <!-- TEXTO ROBUSTO -->
+            <section>
+                <h2>Dossiê Temático: A Grande Transformação Produtiva</h2>
+                <p>
+                    A <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr>, iniciada na <abbr title="Inglaterra: país pioneiro no processo de industrialização devido à abundância de carvão e ferro">Inglaterra</abbr> em meados do século XVIII, representou uma ruptura profunda com as formas tradicionais de produção artesanal e <abbr title="Manufatura: sistema de produção manual que antecedeu a maquinofatura, caracterizado pela divisão inicial de tarefas">manufatura</abbr>. Impulsionada pelo acúmulo de capital oriundo do <abbr title="Comércio colonial: sistema de trocas comerciais mercantilista entre metrópoles e colônias">comércio colonial</abbr>, pela abundância de <abbr title="Carvão mineral: principal fonte de energia fóssil utilizada para alimentar as caldeiras das máquinas a vapor na primeira fase industrial">carvão mineral</abbr> e ferro, e pelas transformações agrárias provocadas pelas <abbr title="Leis de cercamento dos campos: leis britânicas que privatizaram terras comunais, expulsando camponeses para as cidades">leis de cercamento dos campos</abbr>, a <abbr title="Sociedade: conjunto de pessoas que convivem sob regras comuns e estruturas organizadas">sociedade</abbr> europeia reconfigurou-se drasticamente.
+                </p>
+                
+                <h3>A Introdução das <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">Máquinas a Vapor</abbr> e a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">Divisão do Trabalho</abbr></h3>
+                <p>
+                    O aperfeiçoamento da <abbr title="Máquina a vapor de James Watt: motor térmico que converteu a energia do vapor em movimento mecânico contínuo">máquina a vapor de James Watt</abbr> permitiu a substituição da energia humana e animal pela força motriz mecânica. Nas <abbr title="Fábricas: estabelecimentos industriais concentradores de máquinas e trabalhadores assalariados">fábricas</abbr>, implantou-se a rigorosa <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr>, onde cada <abbr title="Operário: trabalhador assalariado que atua no processo produtivo industrial">operário</abbr> executava apenas uma etapa repetitiva do processo produtivo. Essa <abbr title="Racionalização produtiva: método de otimização de tempo e recursos para maximizar a produção industrial">racionalização produtiva</abbr> elevou exponencialmente a <abbr title="Produtividade: capacidade de produzir maior quantidade de bens em menor espaço de tempo">produtividade</abbr>, barateando mercadorias e alterando a noção de tempo e espaço na <abbr title="Civilização contemporânea: período histórico marcado pela consolidação do capitalismo industrial e avanços tecnológicos">civilização contemporânea</abbr>.
+                </p>
+
+                <h3>A Formação do <abbr title="Operariado: classe social formada pelos trabalhadores assalariados das indústrias">Operariado</abbr> e as Condições de Vida</h3>
+                <p>
+                    Com o êxodo rural massivo, formou-se o <abbr title="Proletariado urbano: classe social desprovida dos meios de produção que vende sua força de trabalho em troca de salário">proletariado urbano</abbr>. Os trabalhadores enfrentavam jornadas extenuantes de até 16 horas diárias em ambientes insalubres, perigosos e mal iluminados. Mulheres e crianças eram amplamente empregadas devido aos salários inferiores. A ausência de <abbr title="Legislação trabalhista: conjunto de leis reguladoras das relações de trabalho e proteção ao operário">legislação trabalhista</abbr> gerou forte <abbr title="Exploração do trabalho: apropriação excessiva da força de trabalho alheia sem garantias de dignidade ou justa remuneração">exploração do trabalho</abbr>, provocando revoltas populares como o <abbr title="Ludismo: movimento social de revolta em que trabalhadores destruíam máquinas industriais como forma de protesto">ludismo</abbr> e a articulação de sindicatos iniciais conhecidos como <abbr title="Trade unions: primeiras associações de trabalhadores formadas na Inglaterra para reivindicar melhores condições laborais">trade unions</abbr>.
+                </p>
+
+                <h3>Mudanças Socioambientais Globais</h3>
+                <p>
+                    O impacto ecológico e social da industrialização foi planetário. A queima em larga escala de combustíveis fósseis deu início à emissão massiva de gases poluentes na atmosfera, inaugurando o conceito moderno de <abbr title="Antropoceno: época geológica caracterizada pelos impactos significativos das atividades humanas sobre os ecossistemas da Terra">Antropoceno</abbr>. As cidades cresceram de forma desordenada, sem saneamento básico, gerando epidemias de cólera e tifo. Consolidou-se, assim, o <abbr title="Capitalismo industrial: fase do capitalismo em que a produção de mercadorias em massa nas indústrias se torna o eixo central da economia">capitalismo industrial</abbr>, redefinindo as relações geopolíticas globais.
+                </p>
+            </section>
+
+            <!-- PERGUNTAS ESTILO ENEM -->
+            <section class="questao-box">
+                <h2>Exercícios de Fixação (Estilo ENEM)</h2>
+
+                <!-- Questão 01 -->
+                <div style="margin-bottom: 25px;">
+                    <p><strong>1. (Enem - Adaptado)</strong> A industrialização inglesa do século XVIII caracterizou-se não apenas por inovações tecnológicas como a <abbr title="Máquina a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquina a vapor</abbr>, mas por uma profunda transformação nas relações de trabalho. A respeito desse contexto, a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr> nas <abbr title="Fábricas: estabelecimentos industriais concentradores de máquinas e trabalhadores assalariados">fábricas</abbr> teve como principal consequência:</p>
+                    
+                    <ul>
+                        <li><label><input type="radio" name="q1"> a) A valorização do saber artesanal, permitindo ao trabalhador dominar todas as etapas de fabricação do produto.</label></li>
+                        <li><label><input type="radio" name="q1"> b) A perda do controle sobre o processo produtivo pelo trabalhador, transformado em mero operador de tarefas repetitivas.</label></li>
+                        <li><label><input type="radio" name="q1"> c) A erradicação completa das desigualdades sociais devido ao barateamento das mercadorias de consumo.</label></li>
+                        <li><label><input type="radio" name="q1"> d) A diminuição drástica das jornadas diárias nas <abbr title="Fábricas: estabelecimentos industriais concentradores de máquinas e trabalhadores assalariados">fábricas</abbr> graças ao ganho de <abbr title="Produtividade: capacidade de produzir maior quantidade de bens em menor espaço de tempo">produtividade</abbr>.</label></li>
+                        <li><label><input type="radio" name="q1"> e) A extinção do uso de mão de obra infantil devido às exigências de escolaridade técnica.</label></li>
+                    </ul>
+
+                    <button onclick="mostrarGabarito1()">Ver Gabarito 🔍</button>
+
+                    <div id="gabarito-1" class="gabarito">
+                        <p><strong>Resposta Correta: Letra b</strong></p>
+                        <p><em>Comentário:</em> Com a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr>, o <abbr title="Operário: trabalhador assalariado que atua no processo produtivo industrial">operário</abbr> deixou de conhecer o ciclo completo de fabricação do produto (como ocorria no artesanato), tornando-se alienado e especializado em uma única função repetitiva.</p>
+                    </div>
+                </div>
+
+                <!-- Questão 02 -->
+                <div>
+                    <p><strong>2. (Enem - Adaptado)</strong> O surgimento do <abbr title="Operariado: classe social formada pelos trabalhadores assalariados das indústrias">operariado</abbr> e a expansão urbana acelerada durante a primeira fase da <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr> geraram profundos impactos socioambientais. Entre as reações operárias a esse modelo de <abbr title="Desenvolvimento econômico: crescimento quantitativo e qualitativo da economia e da produção de riquezas">desenvolvimento econômico</abbr>, destaca-se o movimento conhecido como:</p>
+                    
+                    <ul>
+                        <li><label><input type="radio" name="q2"> a) <abbr title="Cartismo: movimento operário britânico que exigia reformas políticas, como o sufrágio universal masculino">Cartismo</abbr>, que defendia a abolição da monarquia parlamentarista britânica.</abbr></label></li>
+                        <li><label><input type="radio" name="q2"> b) <abbr title="Ludismo: movimento social de revolta em que trabalhadores destruíam máquinas industriais como forma de protesto">Ludismo</abbr>, focado na depredação de <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquinas</abbr> vistas como símbolos da substituição e <abbr title="Exploração do trabalho: apropriação excessiva da força de trabalho alheia sem garantias de dignidade ou justa remuneração">exploração</abbr> humana.</abbr></label></li>
+                        <li><label><input type="radio" name="q2"> c) <abbr title="Feudalismo: sistema socioeconômico medieval baseado na servidão e na posse de terras pela nobreza">Feudalismo</abbr> agrário, que restaurou as corporações de ofício medievais nas metrópoles.</abbr></label></li>
+                        <li><label><input type="radio" name="q2"> d) Mercantilismo estatal, que restabeleceu o monopólio comercial das companhias das índias.</abbr></label></li>
+                        <li><label><input type="radio" name="q2"> e) Iluminismo científico, que financiou a criação de escolas públicas para os filhos dos operários fabris.</abbr></label></li>
+                    </ul>
+
+                    <button onclick="mostrarGabarito2()">Ver Gabarito 🔍</button>
+
+                    <div id="gabarito-2" class="gabarito">
+                        <p><strong>Resposta Correta: Letra b</strong></p>
+                        <p><em>Comentário:</em> O <abbr title="Ludismo: movimento social de revolta em que trabalhadores destruíam máquinas industriais como forma de protesto">Ludismo</abbr> ficou mundialmente conhecido pela ação dos "quebradores de <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquinas</abbr>", que protestavam contra o desemprego e as péssimas condições impostas pelo maquinário industrial.</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Portal Didático Público — Material alinhado à BNCC.</p>
+        </footer>
     </div>
 
-    <header>
-        <button onclick="history.back()" style="background: none; border: 1px solid var(--border-color); padding: 5px 10px; cursor: pointer; margin-bottom: 10px; font-size: 10pt; font-family: Arial, sans-serif;">⬅ Voltar</button>
-        <h1>A <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr></h1>
-        <p>A introdução das <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquinas a vapor</abbr>, a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr>, a formação do <abbr title="Operariado: classe social formada pelos trabalhadores assalariados das indústrias">operariado</abbr> e as mudanças socioambientais globais</p>
-        <div>BNCC: EF08HI03 - A <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr> e seus impactos na produção, no trabalho e no meio ambiente</div>
-    </header>
+    <!-- Scripts dos Gabaritos Independentes -->
+    <script>
+        function mostrarGabarito1() {
+            const gabarito = document.getElementById('gabarito-1');
+            gabarito.style.display = (gabarito.style.display === 'block') ? 'none' : 'block';
+        }
 
-    <main>
-
-        <!-- ESPAÇO PARA IMAGEM -->
-        <section>
-            <h2>Mídia Didática</h2>
-            <div>
-                <img src="https://www.cache2net3.com/Repositorio/251/Publicacoes/26055/da9fde27-9.jpg" width="600" Ilustração de uma fábrica do século XIX com <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquinas a vapor</abbr> e chaminés poluentes - Dimensões sugeridas: 800x450px]
-            </div>
-        </section>
-
-        <!-- TEXTO ROBUSTO -->
-        <section>
-            <h2>Dossiê Temático: A Grande Transformação Produtiva</h2>
-            <p>
-                A <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr>, iniciada na <abbr title="Inglaterra: país pioneiro no processo de industrialização devido à abundância de carvão e ferro">Inglaterra</abbr> em meados do século XVIII, representou uma ruptura profunda com as formas tradicionais de produção artesanal e <abbr title="Manufatura: sistema de produção manual que antecedeu a maquinofatura, caracterizado pela divisão inicial de tarefas">manufatura</abbr>. Impulsionada pelo acúmulo de capital oriundo do <abbr title="Comércio colonial: sistema de trocas comerciais mercantilista entre metrópoles e colônias">comércio colonial</abbr>, pela abundância de <abbr title="Carvão mineral: principal fonte de energia fóssil utilizada para alimentar as caldeiras das máquinas a vapor na primeira fase industrial">carvão mineral</abbr> e ferro, e pelas transformações agrárias provocadas pelas <abbr title="Leis de cercamento dos campos: leis britânicas que privatizaram terras comunais, expulsando camponeses para as cidades">leis de cercamento dos campos</abbr>, a <abbr title="Sociedade: conjunto de pessoas que convivem sob regras comuns e estruturas organizadas">sociedade</abbr> europeia reconfigurou-se drasticamente.
-            </p>
-            
-            <h3>A Introdução das <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">Máquinas a Vapor</abbr> e a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">Divisão do Trabalho</abbr></h3>
-            <p>
-                O aperfeiçoamento da <abbr title="Máquina a vapor de James Watt: motor térmico que converteu a energia do vapor em movimento mecânico contínuo">máquina a vapor de James Watt</abbr> permitiu a substituição da energia humana e animal pela força motriz mecânica. Nas <abbr title="Fábricas: estabelecimentos industriais concentradores de máquinas e trabalhadores assalariados">fábricas</abbr>, implantou-se a rigorosa <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr>, onde cada <abbr title="Operário: trabalhador assalariado que atua no processo produtivo industrial">operário</abbr> executava apenas uma etapa repetitiva do processo produtivo. Essa <abbr title="Racionalização produtiva: método de otimização de tempo e recursos para maximizar a produção industrial">racionalização produtiva</abbr> elevou exponencialmente a <abbr title="Produtividade: capacidade de produzir maior quantidade de bens em menor espaço de tempo">produtividade</abbr>, barateando mercadorias e alterando a noção de tempo e espaço na <abbr title="Civilização contemporânea: período histórico marcado pela consolidação do capitalismo industrial e avanços tecnológicos">civilização contemporânea</abbr>.
-            </p>
-
-            <h3>A Formação do <abbr title="Operariado: classe social formada pelos trabalhadores assalariados das indústrias">Operariado</abbr> e as Condições de Vida</h3>
-            <p>
-                Com o êxodo rural massivo, formou-se o <abbr title="Proletariado urbano: classe social desprovida dos meios de produção que vende sua força de trabalho em troca de salário">proletariado urbano</abbr>. Os trabalhadores enfrentavam jornadas extenuantes de até 16 horas diárias em ambientes insalubres, perigosos e mal iluminados. Mulheres e crianças eram amplamente empregadas devido aos salários inferiores. A ausência de <abbr title="Legislação trabalhista: conjunto de leis reguladoras das relações de trabalho e proteção ao operário">legislação trabalhista</abbr> gerou forte <abbr title="Exploração do trabalho: apropriação excessiva da força de trabalho alheia sem garantias de dignidade ou justa remuneração">exploração do trabalho</abbr>, provocando revoltas populares como o <abbr title="Ludismo: movimento social de revolta em que trabalhadores destruíam máquinas industriais como forma de protesto">ludismo</abbr> e a articulação de sindicatos iniciais conhecidos como <abbr title="Trade unions: primeiras associações de trabalhadores formadas na Inglaterra para reivindicar melhores condições laborais">trade unions</abbr>.
-            </p>
-
-            <h3>Mudanças Socioambientais Globais</h3>
-            <p>
-                O impacto ecológico e social da industrialização foi planetário. A queima em larga escala de combustíveis fósseis deu início à emissão massiva de gases poluentes na atmosfera, inaugurando o conceito moderno de <abbr title="Antropoceno: época geológica caracterizada pelos impactos significativos das atividades humanas sobre os ecossistemas da Terra">Antropoceno</abbr>. As cidades cresceram de forma desordenada, sem saneamento básico, gerando epidemias de cólera e tifo. Consolidou-se, assim, o <abbr title="Capitalismo industrial: fase do capitalismo em que a produção de mercadorias em massa nas indústrias se torna o eixo central da economia">capitalismo industrial</abbr>, redefinindo as relações geopolíticas globais.
-            </p>
-        </section>
-
-        <!-- PERGUNTAS ESTILO ENEM -->
-        <section>
-            <h2>Exercícios de Fixação (Estilo ENEM)</h2>
-
-            <div>
-                <p><strong>1. (Enem - Adaptado)</strong> A industrialização inglesa do século XVIII caracterizou-se não apenas por inovações tecnológicas como a <abbr title="Máquina a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquina a vapor</abbr>, mas por uma profunda transformação nas relações de trabalho. A respeito desse contexto, a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr> nas <abbr title="Fábricas: estabelecimentos industriais concentradores de máquinas e trabalhadores assalariados">fábricas</abbr> teve como principal consequência:</p>
-                <div>
-                    <label><input type="radio" name="q1"> a) A valorização do saber artesanal, permitindo ao trabalhador dominar todas as etapas de fabricação do produto.</label><br>
-                    <label><input type="radio" name="q1"> b) A perda do controle sobre o processo produtivo pelo trabalhador, transformado em mero operador de tarefas repetitivas.</label><br>
-                    <label><input type="radio" name="q1"> c) A erradicação completa das desigualdades sociais devido ao barateamento das mercadorias de consumo.</label><br>
-                    <label><input type="radio" name="q1"> d) A diminuição drástica das jornadas diárias nas <abbr title="Fábricas: estabelecimentos industriais concentradores de máquinas e trabalhadores assalariados">fábricas</abbr> graças ao ganho de <abbr title="Produtividade: capacidade de produzir maior quantidade de bens em menor espaço de tempo">produtividade</abbr>.</label><br>
-                    <label><input type="radio" name="q1"> e) A extinção do uso de mão de obra infantil devido às exigências de escolaridade técnica.</label>
-                </div>
-            </div>
-
-            <br>
-
-            <div>
-                <p><strong>2. (Enem - Adaptado)</strong> O surgimento do <abbr title="Operariado: classe social formada pelos trabalhadores assalariados das indústrias">operariado</abbr> e a expansão urbana acelerada durante a primeira fase da <abbr title="Revolução Industrial: processo de transição para novos processos de fabricação ocorrido entre os séculos XVIII e XIX">Revolução Industrial</abbr> geraram profundos impactos socioambientais. Entre as reações operárias a esse modelo de <abbr title="Desenvolvimento econômico: crescimento quantitativo e qualitativo da economia e da produção de riquezas">desenvolvimento econômico</abbr>, destaca-se o movimento conhecido como:</p>
-                <div>
-                    <label><input type="radio" name="q2"> a) <abbr title="Cartismo: movimento operário britânico que exigia reformas políticas, como o sufrágio universal masculino">Cartismo</abbr>, que defendia a abolição da monarquia parlamentarista britânica.</label><br>
-                    <label><input type="radio" name="q2"> b) <abbr title="Ludismo: movimento social de revolta em que trabalhadores destruíam máquinas industriais como forma de protesto">Ludismo</abbr>, focado na depredação de <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquinas</abbr> vistas como símbolos da substituição e <abbr title="Exploração do trabalho: apropriação excessiva da força de trabalho alheia sem garantias de dignidade ou justa remuneração">exploração</abbr> humana.</label><br>
-                    <label><input type="radio" name="q2"> c) <abbr title="Feudalismo: sistema socioeconômico medieval baseado na servidão e na posse de terras pela nobreza">Feudalismo</abbr> agrário, que restaurou as corporações de ofício medievais nas metrópoles.</label><br>
-                    <label><input type="radio" name="q2"> d) Mercantilismo estatal, que restabeleceu o monopólio comercial das companhias das índias.</label><br>
-                    <label><input type="radio" name="q2"> e) Iluminismo científico, que financiou a criação de escolas públicas para os filhos dos operários fabris.</label>
-                </div>
-            </div>
-
-            <br>
-
-            <!-- GABARITO ESCONDIDO -->
-            <details>
-                <summary>Clique aqui para revelar o Gabarito e Comentários</summary>
-                <p>
-                    <strong>Gabarito Questão 1:</strong> <strong>b</strong><br>
-                    <em>Comentário:</em> Com a <abbr title="Divisão do trabalho: separação de tarefas em processos produtivos especializados executados por diferentes trabalhadores">divisão do trabalho</abbr>, o <abbr title="Operário: trabalhador assalariado que atua no processo produtivo industrial">operário</abbr> deixou de conhecer o ciclo completo de fabricação do produto (como ocorria no artesanato), tornando-se alienado e especializado em uma única função repetitiva.
-                </p>
-                <p>
-                    <strong>Gabarito Questão 2:</strong> <strong>b</strong><br>
-                    <em>Comentário:</em> O <abbr title="Ludismo: movimento social de revolta em que trabalhadores destruíam máquinas industriais como forma de protesto">Ludismo</abbr> ficou mundialmente conhecido pela ação dos "quebradores de <abbr title="Máquinas a vapor: dispositivos que utilizam energia térmica do vapor de água para realizar trabalho mecânico">máquinas</abbr>", que protestavam contra o desemprego e as péssimas condições impostas pelo maquinário industrial.
-                </p>
-            </details>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Portal Didático Público — Material alinhado à BNCC.</p>
-    </footer>
+        function mostrarGabarito2() {
+            const gabarito = document.getElementById('gabarito-2');
+            gabarito.style.display = (gabarito.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
 
 </body>
 </html>
