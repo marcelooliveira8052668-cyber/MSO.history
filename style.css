@@ -1,213 +1,122 @@
+/* ==========================================
+   ESTILO ROMANO-CLÁSSICO PARA OS CARDS
+   ========================================== */
+
+/* Cores e Variáveis Globais (Mármore, Papiro, Ouro e Vermelho Imperial) */
 :root {
-    --cnn-red: #cc0000;
-    --cnn-black: #0d0d0d;
-    --cnn-dark-gray: #1a1a1a;
-    --cnn-light-gray: #f4f4f4;
-    --cnn-border: #e0e0e0;
-    --font-main: 'Roboto', sans-serif;
-    --font-heading: 'Montserrat', sans-serif;
+    --roman-bg: #f4f1ea;          /* Fundo tom de papiro / pergaminho claro */
+    --roman-card-bg: #ffffff;     /* Fundo branco mármore para os blocos */
+    --roman-border: #d4af37;      /* Borda em ouro imperial / bronze */
+    --roman-border-subtle: #dcd6cd;/* Borda secundária discreta */
+    --roman-red: #8b1e0f;         /* Vermelho Pompéia / Imperial para destaques */
+    --roman-red-hover: #a82718;   /* Vermelho mais vivo ao passar o mouse */
+    --roman-text: #2c2a29;        /* Texto cor de tinta antiga / carvão */
+    --roman-heading: #1a1918;     /* Títulos fortes */
+    --roman-gold-bg: #fcf8ee;     /* Fundo sutil para caixas de data */
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: var(--cnn-light-gray);
-    color: var(--cnn-black);
-    font-family: var(--font-main);
-    line-height: 1.5;
-}
-
-/* CABEÇALHO CNN */
-.cnn-header {
-    background-color: var(--cnn-black);
-    color: #fff;
-    border-bottom: 4px solid var(--cnn-red);
-    padding: 15px 0;
-}
-
-.cnn-top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 8px;
-}
-
-.live-badge {
-    background-color: var(--cnn-red);
-    color: white;
-    padding: 2px 8px;
-    border-radius: 2px;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0.6; }
-    100% { opacity: 1; }
-}
-
-.cnn-logo-area {
-    text-align: center;
-    margin-top: 15px;
-}
-
-.cnn-header h1 {
-    font-family: var(--font-heading);
-    font-size: 3rem;
-    font-weight: 900;
-    letter-spacing: 3px;
-    color: #fff;
-}
-
-.history-sub {
-    color: var(--cnn-red);
-}
-
-.subtitle {
-    font-size: 0.9rem;
-    color: #aaa;
-    font-weight: 300;
-    margin-top: 2px;
-}
-
-/* CONTAINER PRINCIPAL */
-.cnn-container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 0 20px;
-}
-
-/* BREAKING NEWS BAR */
-.breaking-banner {
-    display: flex;
-    background-color: var(--cnn-red);
-    color: white;
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 0.85rem;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.breaking-label {
-    background-color: #000;
-    padding: 10px 15px;
-    letter-spacing: 1px;
-}
-
-.breaking-text {
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    font-weight: 400;
-}
-
-/* BARRA DE PESQUISA */
-.search-section {
-    margin-bottom: 30px;
-}
-
-#search-input {
-    width: 100%;
-    padding: 14px 20px;
-    font-family: var(--font-main);
-    font-size: 1rem;
-    border: 2px solid var(--cnn-border);
-    background-color: white;
-    outline: none;
-    transition: border-color 0.2s;
-}
-
-#search-input:focus {
-    border-color: var(--cnn-red);
-}
-
-/* FEED CRONOLÓGICO (ESTILO PORTAL DE NOTÍCIAS) */
+/* Container Geral do Feed */
 .timeline-feed {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    background-color: var(--roman-bg);
+    padding: 40px 20px;
+    font-family: 'Cinzel', 'Times New Roman', serif; /* Fontes com serifa clássica romana */
 }
 
+/* Cada Card / Caixa no estilo Romano */
 .news-card {
-    background-color: white;
-    border-left: 5px solid var(--cnn-red);
-    border-top: 1px solid var(--cnn-border);
-    border-right: 1px solid var(--cnn-border);
-    border-bottom: 1px solid var(--cnn-border);
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--roman-card-bg);
+    border: 1px solid var(--roman-border-subtle);
+    border-top: 3px solid var(--roman-border); /* Detalhe superior lembrando friso de coluna */
+    border-radius: 2px; /* Estrutura bem geométrica e sólida */
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
+/* Efeito de relevo clássico ao passar o mouse */
 .news-card:hover {
+    border-top-color: var(--roman-red);
+    border-color: var(--roman-border);
+    box-shadow: 0 8px 25px rgba(139, 30, 15, 0.12);
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
+/* Metadados (Categoria e Fase) */
 .card-meta {
     display: flex;
     justify-content: space-between;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 8px;
+    align-items: center;
+    border-bottom: 1px solid var(--roman-border-subtle);
+    padding-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .category-tag {
-    color: var(--cnn-red);
-    letter-spacing: 0.5px;
+    background: var(--roman-red);
+    color: #ffffff;
+    padding: 3px 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border-radius: 1px;
 }
 
 .time-marker {
-    color: #777;
-    background-color: #f0f0f0;
-    padding: 2px 6px;
+    color: #7a6e65;
+    font-size: 0.8rem;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
+/* Títulos dos Cards (Links) */
 .news-card h2 {
-    font-family: var(--font-heading);
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 8px;
+    margin: 0 0 12px 0;
+    font-size: 1.6rem;
+    letter-spacing: 0.5px;
 }
 
 .news-card h2 a {
-    color: var(--cnn-black);
+    color: var(--roman-heading);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.2s ease;
 }
 
 .news-card h2 a:hover {
-    color: var(--cnn-red);
+    color: var(--roman-red);
 }
 
+/* Descrição */
 .news-card p {
+    color: var(--roman-text);
     font-size: 0.95rem;
-    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'Lora', 'Georgia', serif; /* Texto fluido e elegante para leitura */
 }
 
-/* RODAPÉ CNN */
-.cnn-footer {
-    background-color: var(--cnn-black);
-    color: #888;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 50px;
+/* Data Histórica (Surgimento/Período) */
+.card-historic-date {
+    display: inline-block;
+    color: #5c4a1e;
+    font-size: 0.85rem;
+    font-weight: bold;
+    background: var(--roman-gold-bg);
+    border: 1px solid #ebd9a5;
+    padding: 6px 12px;
+    margin-top: 5px;
+    margin-right: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Status do Conteúdo */
+.card-status {
+    display: inline-block;
+    color: #7a6e65;
     font-size: 0.8rem;
-    border-top: 4px solid var(--cnn-red);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-style: italic;
+    margin-top: 10px;
 }

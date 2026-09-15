@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações com Números Naturais e Decimais - 6º Ano (BNCC)</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #0284c7;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+            --accent-light: #f0f9ff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 30px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+            border-top: 6px solid var(--primary);
+        }
+
+        header.metadata {
+            background: var(--accent-light);
+            border-left: 4px solid var(--secondary);
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+
+        header.metadata ul {
+            margin: 8px 0 0 0;
+            padding-left: 20px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 1.4rem;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin-top: 25px;
+            font-size: 1.15rem;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        .media-container {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 15px;
+            background: #fafafa;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: #64748b;
+            margin-top: 8px;
+        }
+
+        .math-block {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            text-align: center;
+            margin: 15px 0;
+            font-family: 'Cambria Math', Georgia, serif;
+        }
+
+        .case-study, .question-card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .question-card {
+            border-left: 4px solid var(--primary);
+        }
+
+        ul.options {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.options li {
+            background: #ffffff;
+            border: 1px solid var(--border);
+            margin-bottom: 8px;
+            padding: 10px 14px;
+            border-radius: 4px;
+        }
+
+        .solution-box {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 0 6px 6px 0;
+            font-size: 0.95rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="back-link">← Voltar para o Painel</a>
+
+        <h1>Aula: Operações com Números Naturais e Decimais</h1>
+
+        <header class="metadata">
+            <strong>Metadados BNCC:</strong>
+            <ul>
+                <li><strong>Componente Curricular / Unidade Temática:</strong> Matemática / Números</li>
+                <li><strong>Ano/Faixa Etária:</strong> 6º Ano do Ensino Fundamental</li>
+                <li><strong>Objeto de Conhecimento:</strong> Operações (adição, subtração, multiplicação, divisão e potenciação) com números naturais e racionais na representação decimal.</li>
+                <li><strong>Habilidades Relacionadas:</strong> `EF06MA03`, `EF06MA04`</li>
+            </ul>
+        </header>
+
+        <section>
+            <h2>1. Contextualização Inicial e Marco Conceitual</h2>
+            <p>Os <strong>números naturais</strong> (\(\mathbb{N} = \{0, 1, 2, 3, 4, \dots\}\)) surgiram da necessidade humana de <strong>contar</strong> discreta e cardinalmente. Contudo, a prática comercial, a divisão de terras, a mensuração de massas, comprimentos e o controle monetário exigiram a precisão dos <strong>números decimais</strong> (uma extensão do sistema de numeração decimal posicional para a parte fracionária menor que a unidade, baseada em potências de 10 no denominador).</p>
+            <p>Compreender operações com esses conjuntos não se reduz a aplicar "regras de decoreba" (como "andar com a vírgula" ou "empilhar vírgulas embaixo de vírgula"), mas sim dominar o <strong>princípio do valor posicional</strong> e a <strong>invariância ou proporcionalidade das operações aritméticas</strong>.</p>
+        </section>
+
+        <section>
+            <h2>2. Ponto de Inserção da Mídia/Imagem Didática</h2>
+            <div class="media-container">
+                <abbr title="[IMAGEM ILUSTRATIVA: Infográfico comparativo de uma régua milimetrada e um cupom fiscal de supermercado. Na régua, destaca-se 1,5 cm entre o 1 e o 2, evidenciando o décimo. No cupom fiscal, colunas de preços unitários e totais com alinhamento rigoroso de vírgulas em valores como R$ 12,50 e R$ 0,75, demonstrando o sistema posicional decimal na prática monetária.]">
+                    🖼️ [Espaço Reservado para Imagem/Infográfico: Sistema Posicional na Régua e no Cupom Fiscal]
+                </abbr>
+                <figcaption>Figura 1: A continuidade entre a medida contínua (decimal na geometria/métrico) e a discreteza financeira (decimal monetário).</figcaption>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Desenvolvimento Teórico-Metodológico</h2>
+            
+            <h3>3.1. Adição e Subtração: O Princípio da Ordem Posicional</h3>
+            <p>Para somar ou subtrair números decimais, o erro conceitual mais frequente é alinhar os números pela borda direita (como inteiros) em vez de alinhar <strong>pela vírgula</strong>.</p>
+            <ul>
+                <li><strong>Fundamento:</strong> Só se adicionam ou subtraem ordens iguais (décimos com décimos, centésimos com centésimos, unidades com unidades).</li>
+            </ul>
+            <div class="math-block">
+                Exemplo ($12,4 + 3,85$):<br>
+                12,40 (acréscimo de zero para igualar casas)<br>
+                +  3,85<br>
+                <strong>16,25</strong>
+            </div>
+
+            <h3>3.2. Multiplicação de Decimais: O Significado da Escala</h3>
+            <p>Quando multiplicamos dois números decimais (ex.: $2,5 \times 1,4$), estamos calculando a área de um retângulo cujos lados medem $2,5$ e $1,4$ unidades.</p>
+            <ul>
+                <li><strong>Regra Operatória:</strong> Multiplica-se como naturais ($25 \times 14 = 350$). Soma-se o total de casas decimais dos fatores ($1 + 1 = 2$ casas). Conta-se da direita para a esquerda: $3,50$.</li>
+                <li><strong>Justificativa algébrica:</strong> $2,5 \times 1,4 = \left(\frac{25}{10}\right) \times \left(\frac{14}{10}\right) = \frac{350}{100} = 3,50$.</li>
+            </ul>
+
+            <h3>3.3. Divisão de Decimais: A Equivalência de Quocientes</h3>
+            <p>Dividir divisor em divisor/dividendo significa encontrar quantas vezes o divisor cabe no dividendo. Para eliminar a vírgula do divisor, multiplicamos ambos por uma mesma potência de $10$ (fração equivalente). Exemplo: $7,5 \div 1,5 \equiv 75 \div 15 = 5$.</p>
+
+            <h3>3.4. Potenciação com Decimais</h3>
+            <p>Potenciar um decimal menor que 1 (ex.: $(0,2)^3$) resulta em um número <strong>menor</strong> em módulo do que a base: $(0,2)^3 = 0,2 \times 0,2 \times 0,2 = 0,008$.</p>
+        </section>
+
+        <section>
+            <h2>4. Estudo de Caso / Aplicação Situada</h2>
+            <div class="case-study">
+                <p><strong>Situação-Problema:</strong> Um laboratório de automação residencial consome energia com um dispositivo IoT que gasta $0,012\text{ kWh}$ por hora em standby e $0,35\text{ kWh}$ por hora em pico operacional. Se o dispositivo opera $6\text{ horas}$ em pico e $18\text{ horas}$ em standby por dia, qual é o consumo energético em <strong>5 dias</strong>?</p>
+                <ol>
+                    <li><strong>Consumo diário em pico:</strong> $6 \times 0,35 = 2,10\text{ kWh}$.</li>
+                    <li><strong>Consumo diário em standby:</strong> $18 \times 0,012 = 0,216\text{ kWh}$.</li>
+                    <li><strong>Consumo diário total:</strong> $2,10 + 0,216 = 2,316\text{ kWh}$.</li>
+                    <li><strong>Consumo em 5 dias:</strong> $5 \times 2,316 = 11,58\text{ kWh}$.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. Questões no Estilo ENEM</h2>
+
+            <div class="question-card">
+                <p><strong>Questão 1:</strong> Um posto de combustíveis vende gasolina a $R\$ 5,80$ o litro. Um motorista abastece um tanque que já continha $10\text{ litros}$ remanescentes e completa o volume total de $55\text{ litros}$ da capacidade nominal. Com pagamento de $R\$ 300,00$ em dinheiro vivo para um abastecimento parcial sem desconto em volume total padrão (considere o volume novo de $45\text{L}$ faturado a $R\$ 5,65$ após desconto promocional por litro de $R\$ 0,15$), qual o troco?</p>
+                <ul class="options">
+                    <li>A) $R\$ 38,25$</li>
+                    <li>B) $R\$ 45,00$</li>
+                    <li>C) $R\$ 45,75$</li>
+                    <li>D) $R\$ 58,00$</li>
+                    <li>E) $R\$ 67,50$</li>
+                </ul>
+                <div class="solution-box">
+                    <strong>Resolução comentada:</strong><br>
+                    - Volume novo abastecido: $55 - 10 = 45\text{ litros}$.<br>
+                    - Preço com desconto: $5,80 - 0,15 = R\$ 5,65$ por litro.<br>
+                    - Custo total: $45 \times 5,65 = 254,25$.<br>
+                    - Troco: $300,00 - 254,25 = 45,75$.<br>
+                    <strong>Gabarito: C</strong>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <p><strong>Questão 2:</strong> Em uma simulação de propagação de pacotes de dados em rede mesh, a eficiência de atenuação de sinal por nó intermediário é descrita por um fator decimal $f = 0,8$ (retém $80\%$ da intensidade anterior a cada salto). Se a intensidade inicial na origem é de $I_0 = 100\text{ mw}$, qual é a intensidade do sinal após $3$ saltos consecutivos ($I_3 = I_0 \times f^3$)?</p>
+                <ul class="options">
+                    <li>A) $51,2\text{ mW}$</li>
+                    <li>B) $64,0\text{ mW}$</li>
+                    <li>C) $40,0\text{ mW}$</li>
+                    <li>D) $80,0\text{ mW}$</li>
+                    <li>E) $25,6\text{ mW}$</li>
+                </ul>
+                <div class="solution-box">
+                    <strong>Resolução comentada:</strong><br>
+                    - $f^3 = (0,8)^3 = 0,8 \times 0,8 \times 0,8 = 0,512$.<br>
+                    - $I_3 = 100 \times 0,512 = 51,2\text{ mW}$.<br>
+                    <strong>Gabarito: A</strong>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
