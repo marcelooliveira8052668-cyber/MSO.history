@@ -120,3 +120,16 @@
     font-style: italic;
     margin-top: 10px;
 }
+/* Torna o elemento focável automaticamente se ele não tiver */
+abbr {
+  cursor: pointer;
+  text-decoration: underline dotted;
+}
+
+/* Quando o usuário toca na abreviação no celular, o texto do title aparece logo em seguida */
+abbr:focus::after {
+  content: " (" attr(title) ")";
+  font-size: 0.9em;
+  color: #0066cc;
+  font-weight: bold;
+}
