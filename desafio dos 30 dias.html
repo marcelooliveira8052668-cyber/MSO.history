@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de 30 Dias - Recomendação da Equipe</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 12mm;
+            background-color: #f7f9fc;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2c3e50;
+            background-color: #f7f9fc;
+            line-height: 1.5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 22px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+        .point-card {
+            background: #ffffff;
+            border-left: 4px solid #3498db;
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            border-top: 1px solid #edf2f7;
+            border-right: 1px solid #edf2f7;
+            border-bottom: 1px solid #edf2f7;
+            page-break-inside: avoid;
+        }
+        .point-card.scenario {
+            border-left-color: #e67e22;
+            background-color: #fff9f0;
+        }
+        .point-title {
+            font-weight: 700;
+            font-size: 15px;
+            color: #2980b9;
+            margin-bottom: 8px;
+        }
+        .point-card.scenario .point-title {
+            color: #d35400;
+        }
+        .point-content {
+            font-size: 13.5px;
+            color: #34495e;
+        }
+        ul {
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Laboratório de Aprendizagem</h1>
+            <p>Estudo de Caso: Recomendação Estratégica para os Próximos 30 Dias</p>
+        </div>
+
+        <div class="point-card">
+            <div class="point-title">1. DECISÃO - O que a empresa deve priorizar?</div>
+            <div class="point-content">
+                Nós decidimos priorizar a <b>estabilização do produto atual, a correção de bugs críticos e a otimização da experiência do usuário no cadastro (onboarding)</b>. O nosso foco central é arrumar a casa e garantir retenção e funcionamento perfeito antes de acelerarmos aquisições.
+            </div>
+        </div>
+
+        <div class="point-card">
+            <div class="point-title">2. POR QUÊ - Quais evidências do case sustentam essa escolha?</div>
+            <div class="point-content">
+                Nós identificamos as seguintes evidências no case que sustentam a nossa escolha:
+                <ul>
+                    <li><b>Funil com atrito:</b> Muitos usuários iniciam o cadastro, mas parte deles não conclui a configuração da conta.</li>
+                    <li><b>Instabilidade:</b> O suporte recebe reclamações constantes sobre dificuldades e erros (bugs reais).</li>
+                    <li><b>Sobrecarga técnica:</b> Mudanças frequentes de prioridade prejudicam o planejamento, agravadas pelo limite de recursos e orçamento.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="point-card">
+            <div class="point-title">3. AÇÃO - Quais seriam as três primeiras ações?</div>
+            <div class="point-content">
+                Para viabilizar nossa recomendação, nós definimos as seguintes ações:
+                <ul>
+                    <li><b>Otimização do Onboarding:</b> Mapear e simplificar os pontos de abandono no cadastro.</li>
+                    <li><b>Sprint de Estabilidade:</b> Isentar a equipe de desenvolvimento de novas demandas por 30 dias para focarmos exclusivamente na correção de bugs críticos.</li>
+                    <li><b>Alinhamento Comercial e de Marketing:</b> Pausar promessas de novas funções e direcionar o marketing estritamente para atração qualificada compatível com o produto atual.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="point-card">
+            <div class="point-title">4. RENÚNCIA - O que a equipe decidiu não priorizar agora?</div>
+            <div class="point-content">
+                Nós decidimos não priorizar neste momento o desenvolvimento imediato de <b>novas funcionalidades</b> solicitadas pelo comercial e o <b>aumento agressivo de investimentos em aquisição em massa</b> exigido pelo marketing. Com recursos limitados, entendemos que tentar abraçar o crescimento desordenado colapsará a equipe técnica.
+            </div>
+        </div>
+
+        <div class="point-card scenario">
+            <div class="point-title">5. MUDANÇA DE CENÁRIO - A nova informação mudou a decisão? Por quê?</div>
+            <div class="point-content">
+                <b>Nós avaliamos que a decisão não mudou; pelo contrário, foi fortalecida.</b> A redução de 40% no orçamento e a proibição de novas contratações tornam o nosso plano ainda mais acertado. Com menos recursos, nós consideramos que escalar o marketing ou inventar novas funções viraria um desperdício fatal. Para nós, o foco radical na estabilização com a equipe atual é a única saída para garantir a sobrevivência da empresa.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
